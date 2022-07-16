@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Career Readiness Survey</title>
+      <link rel="stylesheet" href="styles.css">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head> 
+  <body>
+    <div>
+      <h1 id="title">Career Readiness Survey</h1>
+      <p id="description">Have you figured out what path to take after graduating?</p>
+      <form id="survey-form">
+        <label id="name-label">Name: <input id="name" type="text" required placeholder="Enter your name"></label>
+        <label id="email-label">Email: <input id="email" type="email" required placeholder="Enter your email"></label>
+        <label id="number-label">Age: <input id="number" type="number" required placeholder="Age" min="11" max="19"></label>
+        <label>
+          What is your current grade?
+          <select id="dropdown">
+            <option selected disabled>Select grade</option>
+            <option value="Sec1">Secondary 1</option>
+            <option value="Sec2">Secondary 2</option>
+            <option value="Sec3">Secondary 3</option>
+            <option value="Sec4">Secondary 4</option>
+            <option value="JC1">Junior College 1</option>
+            <option value="JC2">Junior College 2</option>
+          </select>
+        </label>
+        <label>Are you planning on continuing to university?
+          <label class= "choices"><input name="university" type="radio" value="yes" class= "inline"> Yes</label>
+          <label class= "choices"><input name="university" type="radio" value="no" class="inline"> No</label>
+        </label>
+        <label>Which fields are you interested in?
+          <label class= "choices"><input name="interests" type="checkbox" value="Group 1" class= "inline"> Arts and Humanities</label>
+          <label class= "choices"><input name="interests" type="checkbox" value="Group 2" class= "inline"> Social Sciences, Business and Law</label>
+          <label class= "choices"><input name="interests" type="checkbox" value="Group 3" class= "inline"> Science, Mathematics and Computer</label>
+          <label class= "choices"><input name="interests" type="checkbox" value="Group 4" class= "inline"> Engineering, Manufacturing and Construction</label>
+          <label class= "choices"><input name="interests" type="checkbox" value="Group 5" class= "inline"> Health and Welfare</label>
+        </label>  
+        <label>
+          Do you still have trouble deciding?
+          <textarea name="questions" rows="4" cols="30" placeholder="Ask your questions here!"></textarea>
+        </label>
+        <input type="submit" id="submit" value="Submit">
+      </form>
+    </div>
+  </body>
+</html>
